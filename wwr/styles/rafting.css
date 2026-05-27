@@ -18,7 +18,12 @@ body {
     color: var(--accent1-color);
 }
 
-header,
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+
+}
+
 main,
 footer {
     width: 840px;
@@ -79,7 +84,7 @@ article {
     bottom: 20px;
     left: 20px;
     right: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: var(--secondary-color);
     padding: 20px;
 }
 
