@@ -1,6 +1,5 @@
 :root {
     --primary-color: #1d3557;
-    --secondary-color: #a8dadc;
     --accent1-color: #457b9d;
     --accent2-color: #f1faee;
     --heading-font: "Times New Roman", "Georgia", serif;
@@ -125,7 +124,6 @@ nav a {
 }
 
 .history {
-    background: var(--secondary-color);
     display: grid;
     grid-template-columns: 1fr 250px 1fr;
     align-items: center;
