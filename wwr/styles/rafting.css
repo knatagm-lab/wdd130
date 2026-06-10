@@ -144,10 +144,9 @@ nav a {
 }
 
 .adventures {
-    display: flex;
-    grid-template-columns: repeat(5, fr);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     gap: 10px;
-    align-items: start;
 }
 
 .adventures h2 {
@@ -168,6 +167,12 @@ nav a {
 
 .adventures figcaption {
     margin-top: 5px;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
 .contact-info {
