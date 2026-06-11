@@ -29,7 +29,7 @@ header {
 
 main,
 footer {
-    width: 840px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -175,44 +175,64 @@ nav a {
     margin-top: 5px;
 }
 
-.contact layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
 .contact-info {
     text-align: center;
     margin-bottom: 30px;
 }
 
+.contact-info h1 {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
 .contact-info iframe {
+    display: block;
     width: 100%;
     max-width: 600px;
+    height: 350px;
+    margin: 20px auto;
     border: none;
-    margin-top: 10px;
-}
-
-.employees {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-    text-align: center;
-}
-
-.employees figure {
-    width: 200px;
-}
-
-.employees img {
-    width: 100%;
-    height: auto;
     border-radius: 8px;
 }
 
+.employees {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.employees h2 {
+    grid-column: 1 / -1;
+    margin-bottom: 20px;
+}
+
+.employees figure {
+    margin: auto;
+}
+
+.employees img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
 .contact-form {
-    margin-top: 30px;
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 10px;
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px
 }
 
 .contact-form form {
@@ -221,35 +241,46 @@ nav a {
     gap: 12px;
 }
 
-.contact-form input,
+.contact-form input[type="text"],
+.contact-form input[type="email"],
 .contact-form textarea {
+    width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-family: var(--body-font);
+
 }
 
 .contact-form fieldset {
     border: 1px solid #ccc;
-    padding: 10px;
+    border-radius: 5px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .contact-form legend {
     font-weight: bold;
 }
 
-.contact-form label {
-    margin-top: 5px;
+.contact-form fieldset div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .contact-form button {
     background-color: var(--primary-color);
     color: var(--accent2-color);
-    padding: 10px;
+    padding: 12px;
     border: none;
+    border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
-    border-radius: 4px;
+    width: 200px;
+    align-self: center;
 }
 
 .contact-form button:hover {
